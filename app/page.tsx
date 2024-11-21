@@ -59,9 +59,7 @@ const models = [
   { name: "flux", value: "flux-c" },
   { name: "sd35", value: "sd35-c" },
   { name: "sd3", value: "sd3-c" },
-  { name: "sdxlpro", value: "sdxlpro-c" },
   { name: "sdxl", value: "sdxl-c" },
-  { name: "sd2", value: "sd2-c" },
   { name: "dall-e-3", value: "dall-e-3" },
 ];
 
