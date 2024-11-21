@@ -348,7 +348,7 @@ export default function Page() {
             >
               <div className="rounded bg-gray-200 p-4 text-gray-900">
                 <p className="text-lg">
-                  Create a free account to start making logos:
+                  创建一个免费账号开始生成 logos:
                 </p>
 
                 <div className="mt-4">
