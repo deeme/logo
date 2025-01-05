@@ -103,16 +103,32 @@ export async function POST(req: Request) {
 
   try {
     // 调用 OpenAI API 生成图像
-    const response = await openai.images.generate({
+    const response = await openai.chat.completions.create({
       model: data.selectedModel,
-      prompt: prompt,
-      n: 1,
-      //size: "1024x1024",
+      messages: [
+        {
+          role: "user",
+          content: [
+            {
+              type: "text",
+              text: prompt
+            }
+          ]
+        }
+      ],
     });
 
-    const imageUrl = response.data[0].url;
-    
-    console.log("生成的图片URL:", imageUrl);
+    // 从返回的消息中提取图片URL
+    const message = response.choices[0].message;
+    let imageUrl;
+    // 更精确地提取 URL
+    if (message.content) {
+      const urlRegex = /(https?:\/\/[^\s]+\.(?:png|jpg|jpeg|webp|gif))/gi;
+      const urls = message.content.match(urlRegex);
+      imageUrl = urls ? urls[0].replace(')"', '') : null;
+    }
+
+    console.log("提取的图片URL:", imageUrl);
     return Response.json({ imageUrl }, { status: 200 });
   } catch (error) {
     throw error;

@@ -54,12 +54,18 @@ const backgroundColors = [
 
 // 添加模型选择选项
 const models = [
-  { name: "fluxdev", value: "fluxdev-c" },
-  { name: "fluxpro", value: "fluxpro-c" },
-  { name: "flux", value: "flux-c" },
-  { name: "sd35", value: "sd35-c" },
-  { name: "sd3", value: "sd3-c" },
-  { name: "sdxl", value: "sdxl-c" },
+  { name: "flux-pro-max", value: "flux-pro-max" },
+  { name: "flux-pro", value: "flux-pro" },
+  { name: "flux-dev", value: "flux-dev" },
+  { name: "flux-schnell", value: "flux-schnell" },
+  { name: "flux", value: "flux" },
+  { name: "sd35", value: "sd35" },
+  { name: "sd3", value: "sd3" },
+  { name: "sdxl", value: "sdxl" },
+  { name: "sd2", value: "sd2" },
+  { name: "智谱", value: "dalle-e" },
+  { name: "通义", value: "通义" },
+  { name: "星火", value: "星火" },
   { name: "dall-e-3", value: "dall-e-3" },
 ];
 
