@@ -66,7 +66,6 @@ const models = [
   { name: "智谱", value: "dalle-e" },
   { name: "通义", value: "通义" },
   { name: "星火", value: "星火" },
-  { name: "dall-e-3", value: "dall-e-3" },
 ];
 
 export default function Page() {
