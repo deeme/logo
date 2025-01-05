@@ -54,6 +54,7 @@ const backgroundColors = [
 
 // 添加模型选择选项
 const models = [
+  { name: "通义", value: "通义" },
   { name: "flux-pro-max", value: "flux-pro-max" },
   { name: "flux-pro", value: "flux-pro" },
   { name: "flux-dev", value: "flux-dev" },
@@ -64,8 +65,6 @@ const models = [
   { name: "sdxl", value: "sdxl" },
   { name: "sd2", value: "sd2" },
   { name: "智谱", value: "dalle-e" },
-  { name: "通义", value: "通义" },
-  { name: "星火", value: "星火" },
 ];
 
 export default function Page() {
