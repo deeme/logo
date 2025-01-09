@@ -46,7 +46,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider {...(props as any)} locale="zh-CN">
+    <ClerkProvider 
+      localization={{
+        locale: "zh-CN"
+      }}
+    >
       <html lang="zh" className="h-full">
         <head>
           <PlausibleProvider domain="logo-creator.io" />
