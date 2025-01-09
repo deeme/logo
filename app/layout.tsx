@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jura } from "next/font/google";
 import "./globals.css";
 import { ClerkProvider } from "@clerk/nextjs";
+import { zhCN } from "@clerk/localizations";
 import { Toaster } from "@/app/components/ui/toaster";
 import PlausibleProvider from "next-plausible";
 
@@ -47,9 +48,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider 
-      localization={{
-        locale: "zh-CN"
-      }}
+      localization={zhCN}  // 使用导入的中文本地化配置
     >
       <html lang="zh" className="h-full">
         <head>
