@@ -46,7 +46,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <ClerkProvider locale="zh-CN">
+    <ClerkProvider locale="zh-CN" as={ClerkProvider as any}>
       <html lang="zh" className="h-full">
         <head>
           <PlausibleProvider domain="logo-creator.io" />
