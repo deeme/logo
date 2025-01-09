@@ -47,7 +47,7 @@ export default function RootLayout({
 }>) {
   return (
     <ClerkProvider>
-      <html lang="en" className="h-full">
+      <html lang="zh" className="h-full">
         <head>
           <PlausibleProvider domain="logo-creator.io" />
           <link rel="icon" href="/favicon.ico" sizes="any" />
