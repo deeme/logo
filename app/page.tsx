@@ -65,6 +65,7 @@ const models = [
   { name: "sdxl", value: "sdxl" },
   { name: "sd2", value: "sd2" },
   { name: "智谱", value: "dalle-e" },
+  { name: "dall-e-3", value: "dall-e-3" },
 ];
 
 export default function Page() {
